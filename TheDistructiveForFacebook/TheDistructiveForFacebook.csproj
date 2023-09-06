@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5B8B528E-1675-4310-89D9-1D52F488720F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TheDistructiveForFacebook</RootNamespace>
+    <AssemblyName>TheDistructiveForFacebook</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icons8_facebook_old_26px_1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\AddAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddAccount.Designer.cs">
+      <DependentUpon>AddAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Compare IDs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Compare IDs.Designer.cs">
+      <DependentUpon>Compare IDs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Controls-Facebook\BruterIDs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls-Facebook\BruterIDs.Designer.cs">
+      <DependentUpon>BruterIDs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Controls-Facebook\ReporterIDs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls-Facebook\ReporterIDs.Designer.cs">
+      <DependentUpon>ReporterIDs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Controls-Instagram\UserFinder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls-Instagram\UserFinder.Designer.cs">
+      <DependentUpon>UserFinder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FacebookMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FacebookMain.Designer.cs">
+      <DependentUpon>FacebookMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InstagramMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InstagramMain.Designer.cs">
+      <DependentUpon>InstagramMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OpenMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OpenMain.Designer.cs">
+      <DependentUpon>OpenMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ServerFB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ServerFB.Designer.cs">
+      <DependentUpon>ServerFB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Controls-Facebook\FetchIDs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls-Facebook\FetchIDs.Designer.cs">
+      <DependentUpon>FetchIDs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Controls-Tiwtter\Forms\TiwtterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls-Tiwtter\Forms\TiwtterForm.Designer.cs">
+      <DependentUpon>TiwtterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Controls-Tiwtter\UserControls\TiwtterFetchIDs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls-Tiwtter\UserControls\TiwtterFetchIDs.Designer.cs">
+      <DependentUpon>TiwtterFetchIDs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\AddAccount.resx">
+      <DependentUpon>AddAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Compare IDs.resx">
+      <DependentUpon>Compare IDs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controls-Facebook\BruterIDs.resx">
+      <DependentUpon>BruterIDs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controls-Facebook\ReporterIDs.resx">
+      <DependentUpon>ReporterIDs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controls-Instagram\UserFinder.resx">
+      <DependentUpon>UserFinder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FacebookMain.resx">
+      <DependentUpon>FacebookMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InstagramMain.resx">
+      <DependentUpon>InstagramMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OpenMain.resx">
+      <DependentUpon>OpenMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ServerFB.resx">
+      <DependentUpon>ServerFB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controls-Facebook\FetchIDs.resx">
+      <DependentUpon>FetchIDs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controls-Tiwtter\Forms\TiwtterForm.resx">
+      <DependentUpon>TiwtterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controls-Tiwtter\UserControls\TiwtterFetchIDs.resx">
+      <DependentUpon>TiwtterFetchIDs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons8_facebook_old_26px_1.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
